@@ -34,8 +34,7 @@ void Object::current_pos_check () {
     << "Длина пройденного пути: " << way << endl;
 }
 
-//Метод для определения расстояния до объекта
-int Object::distance_check (int obj_x, int obj_y) {
+int Coordinates::distance_check (int obj_x, int obj_y) {
     float dist; int diff_x, diff_y;
     if (obj_x == x || obj_y == y) 
         dist = fabs (x - obj_x) + fabs (y - obj_y);

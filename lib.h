@@ -7,6 +7,7 @@ class Coordinates {
     public:
     int x;
     int y;
+    int distance_check (int obj_x, int obj_y); 
 };
 
 class Object : public Coordinates {
@@ -18,5 +19,4 @@ class Object : public Coordinates {
     void path_print ();
     void random_walk ();
     void current_pos_check ();
-    int distance_check (int obj_x, int obj_y);
 };
